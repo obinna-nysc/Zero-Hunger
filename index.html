@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodpreneurship Masterclass | Zero Hunger Market</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-green: #2d5a27;
+            --accent-gold: #ffcc00;
+            --light-bg: #f4f7f6;
+            --dark-text: #333;
+            --white: #ffffff;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--light-bg);
+            color: var(--dark-text);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        /* Header & Hero */
+        header {
+            background: var(--primary-green);
+            padding: 20px;
+            text-align: center;
+            color: var(--white);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .hero {
+            padding: 60px 20px;
+            text-align: center;
+            background: linear-gradient(rgba(45, 90, 39, 0.9), rgba(45, 90, 39, 0.9)), 
+                        url('https://images.unsplash.com/photo-1542838132-92c53300491e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            color: var(--white);
+            animation: fadeIn 1s ease-out;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .hero span {
+            color: var(--accent-gold);
+            display: block;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 30px;
+        }
+
+        /* Content Sections */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .card {
+            background: var(--white);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            margin-bottom: 40px;
+            animation: fadeIn 1.2s ease-out;
+        }
+
+        .benefit-list {
+            list-style: none;
+            margin: 20px 0;
+        }
+
+        .benefit-list li {
+            margin-bottom: 15px;
+            padding-left: 35px;
+            position: relative;
+            font-size: 1.1rem;
+        }
+
+        .benefit-list li::before {
+            content: "\f058";
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            position: absolute;
+            left: 0;
+            color: var(--primary-green);
+        }
+
+        /* CTA Button */
+        .cta-container {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .btn-whatsapp {
+            background-color: #25d366;
+            color: white;
+            padding: 20px 40px;
+            font-size: 1.3rem;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 50px;
+            display: inline-flex;
+            align-items: center;
+            gap: 15px;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 20px rgba(37, 211, 102, 0.3);
+            animation: pulse 2s infinite;
+        }
+
+        .btn-whatsapp:hover {
+            transform: scale(1.1);
+            background-color: #128c7e;
+        }
+
+        footer {
+            background: #222;
+            color: #ccc;
+            text-align: center;
+            padding: 30px;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 1.8rem; }
+            .btn-whatsapp { width: 100%; justify-content: center; font-size: 1.1rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h2>Zero Hunger Market</h2>
+    </header>
+
+    <section class="hero">
+        <span>Exclusive Masterclass</span>
+        <h1>Foodpreneurship Masterclass Training</h1>
+        <p>Learn How to Earn in <strong>Millions of Naira</strong> from Foodstuff Business in Nigeria Even without Selling Foodstuff by Yourself.</p>
+    </section>
+
+    <div class="container">
+        <div class="card">
+            <h3 style="color: var(--primary-green); margin-bottom: 15px; text-align: center;">Why You Should Join This Training:</h3>
+            <ul class="benefit-list">
+                <li>Discover the secret "Middleman" strategy that requires zero inventory.</li>
+                <li>How to leverage the high demand for food in Nigeria to build wealth.</li>
+                <li>Connect with top suppliers and distributors nationwide.</li>
+                <li>Step-by-step blueprint to scale from zero to millions monthly.</li>
+                <li><strong>FREE Presentation:</strong> No hidden charges to attend the webinar.</li>
+            </ul>
+        </div>
+
+        <div class="cta-container">
+            <p style="margin-bottom: 20px; font-weight: bold; color: #555;">Click the button below to join the waitlist on WhatsApp</p>
+            <a href="https://chat.whatsapp.com/Fl8jCo2Z0HcCg3rJsCVCvi?mode=gi_t" class="btn-whatsapp" target="_blank">
+                <i class="fab fa-whatsapp fa-2x"></i> JOIN FREE PRESENTATION
+            </a>
+            <p style="margin-top: 15px; font-size: 0.8rem; color: #888;">Limited slots available for this batch!</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Zero Hunger Market. All Rights Reserved.</p>
+        <p>Empowering Nigerians through Sustainable Food Entrepreneurship.</p>
+    </footer>
+
+    <script>
+        // Simple Scroll Animation Reveal
+        window.addEventListener('scroll', function() {
+            const card = document.querySelector('.card');
+            const position = card.getBoundingClientRect().top;
+            const screenPosition = window.innerHeight / 1.3;
+
+            if(position < screenPosition) {
+                card.style.opacity = '1';
+                card.style.transform = 'translateY(0)';
+            }
+        });
+
+        // Console Log for Debugging
+        console.log("Landing Page Loaded Successfully - Zero Hunger Market");
+    </script>
+</body>
+</html>
